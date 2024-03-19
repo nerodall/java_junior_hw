@@ -46,8 +46,10 @@ public class Main {
     private static void updateId(Connection connection) throws SQLException {
         try (Statement statement = connection.createStatement()) {
             int affectedRows = statement.executeUpdate("""
-                    update student  set id ='999' where id ='3'
+                    update student  set id ='999' where id ='2'
                     """);
+            System.out.println("Rows affected " + affectedRows);
         }
+
     }
 }
