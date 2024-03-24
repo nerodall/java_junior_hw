@@ -10,9 +10,8 @@ import org.hibernate.query.Query;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.List;
-import java.util.Queue;
+
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -20,15 +19,14 @@ public class Main {
         Configuration configuration = new Configuration().configure();
 
         try (SessionFactory sessionFactory = configuration.buildSessionFactory()) {
-            try (Connection connection = DriverManager.getConnection("jdbc:sqlserver://localhost\\RESTO;" +
-                    "encrypt=false;trustServerCertificate=false;databaseName=Test;user=java;password=java");) {
+
                 // Student student = new Student(3L, "Vova", "Neroda", 18L);
                 // AddStudent(sessionFactory, student);
                 // System.out.println(findById(sessionFactory,1L));
                 // UpdateStudent(sessionFactory,1L,"Alexei");
                 //  RemoveStudent(sessionFactory,1L);
                 SelectOldStudents(sessionFactory);
-            }
+
         }
 
     }
