@@ -22,5 +22,12 @@
             <version>12.6.1.jre11</version>
         </dependency>
 
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.5.0.CR1</version>
+        </dependency>
     </dependencies>
 </project>

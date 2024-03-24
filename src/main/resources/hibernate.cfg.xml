@@ -1,0 +1,14 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="connection.url">jdbc:sqlserver://localhost\RESTO;encrypt=false;trustServerCertificate=false;databaseName=Test</property>
+        <property name="connection.username">java</property>
+        <property name="connection.password">java</property>
+
+
+
+            <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class = "lesson4.Student"/>
+    </session-factory>
+</hibernate-configuration>
